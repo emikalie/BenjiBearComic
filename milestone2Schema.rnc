@@ -1,0 +1,45 @@
+# Start with the root element 'TEI'
+start = element TEI { page+ }
+
+# Define the 'page' element with a 'number' attribute and multiple 'panel' elements
+page = element page {
+    # 'number' attribute represents the page number (an integer)
+    attribute number { xsd:integer },
+    # A page contains one or more 'panel' elements
+    panel+
+}
+
+# Define the 'panel' element with an 'id' attribute and optional content for 'character' and 'scene'
+panel = element panel {
+    # 'id' attribute (unique ID for the panel)
+    attribute id { xsd:ID },
+    # A panel may contain zero or more 'character' elements and optionally one 'scene'
+    (character*, scene?)
+}
+
+# Define the 'character' element with 'name' and 'action' attributes and optional 'dialogue' content
+character = element character {
+    # 'name' attribute for the character's name, like "Benjie Bear"
+    attribute name { xsd:string },
+    # 'action' attribute specifies what the character is doing (speaking, looking, jumping, etc.)
+    attribute action { "speaking" | "looking" | "jumping" },
+    # Optional 'dialogue' element, containing the spoken words or thoughts
+    dialogue?
+}
+
+# Define the 'dialogue' element, which contains text (the spoken dialogue)
+dialogue = element dialogue { text }
+
+# Define the 'scene' element with a 'description' attribute (scene description in the comic)
+scene = element scene {
+    # 'description' attribute provides a description of the scene (e.g., background info)
+    attribute description { xsd:string }
+}
+
+# Comments:
+# 1. The '<TEI>' element is the root and must contain one or more '<page>' elements.
+# 2. Each '<page>' has a 'number' attribute (an integer) and one or more '<panel>' elements.
+# 3. A '<panel>' element has an 'id' (unique identifier) and may contain multiple '<character>' elements and optionally one '<scene>'.
+# 4. A '<character>' element describes a character in the panel with 'name', 'action' attributes and optionally '<dialogue>'.
+# 5. A '<dialogue>' element contains the actual speech or thoughts of the character.
+# 6. A '<scene>' element describes the visual or situational context of the panel with a 'description' attribute.
