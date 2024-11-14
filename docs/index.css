@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D7CBB2;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #8DAF98;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1, header h2 {
+    color: #333;
+}
+
+header p {
+    color: #666;
+}
+
+#welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#welcome nav {
+    margin-top: 20px;
+}
+
+#welcome nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #8DAF98;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#project {
+    padding: 50px 20px;
+}
+
+#project article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#project ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#project ul li {
+    margin-bottom: 10px;
+}
+
+.comic-read-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comic-page {
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+.comic-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comic-image {
+    width: 100%; 
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

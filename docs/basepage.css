@@ -1,16 +1,52 @@
-/* styles.css */
-
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #D7CBB2;
-     display: flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures content starts below navbar */
     align-items: center;
     height: 100vh;
 }
 
+/* Navbar Styling */
+nav {
+    width: 100%;
+    background-color: #8A6240;
+    height: 60px; /* Set a fixed height for the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the links vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex; /* Makes the list items align horizontally */
+}
+
+nav li {
+    margin: 0 10px; /* Adds space between list items */
+}
+
+nav li a {
+    display: block;
+    color: #CABA9C;
+    padding: 14px 20px; /* Adjust padding to make the links bigger */
+    text-decoration: none;
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+nav li a:hover {
+    background-color: #7B4B36;
+}
+
+/* Container Styling */
 .container {
     width: 90%;
     max-width: 600px;
@@ -19,6 +55,7 @@ body {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 80px; /* Adds space below the navbar */
 }
 
 header h1, header h2 {
@@ -29,24 +66,14 @@ header p {
     color: #666;
 }
 
+/* Welcome Section */
 #welcome {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px; /* Adjust padding for less space */
     background-color: white;
 }
 
-#welcome nav {
-    margin-top: 20px;
-}
-
-#welcome nav a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #8DAF98;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
+/* Project Section */
 #project {
     padding: 50px 20px;
 }
@@ -68,6 +95,32 @@ header p {
     margin-bottom: 10px;
 }
 
+/* Comic Read View */
+.comic-read-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comic-page {
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+.comic-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comic-image {
+    width: 100%; 
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
@@ -93,3 +146,5 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
