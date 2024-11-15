@@ -1,0 +1,131 @@
+<TEI> 
+    <!-- Page 4 encoding start -->
+    <page number="4">
+        <!-- Panel 1: Benjie Bear falls from the crashing cage, no dialogue -->
+        <panel id="panel1">
+            <action description="Benjie Bear is falling from a crashing cage."/>
+        </panel>
+        
+        <!-- Panel 2: Benjie Bear finds honey on the ground -->
+        <panel id="panel2">
+            <character name="Benjie Bear" action="sitting on the floor, surprised to see honey">
+                <dialogue>WOW! HONEY!</dialogue>
+            </character>
+            <scene description="Benjie Bear, now out of the cage, spots honey on the ground.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 3: Benjie Bear finds blackberries -->
+        <panel id="panel3">
+            <character name="Benjie Bear" action="honey dripping from face, noticing blackberries nearby">
+                <dialogue>AND BLACK-BERRIES!</dialogue>
+            </character>
+            <scene description="Benjie Bear, with honey on his face, discovers blackberries nearby.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 4: Benjie Bear eating honey and blackberries -->
+        <panel id="panel4">
+            <character name="Benjie Bear" action="sitting in blackberry container with honey container">
+                <sound>CHOMP-CHOMP! SQUISH! YUM-YUM!</sound>
+            </character>
+            <scene description="Benjie Bear enjoys honey and blackberries, making eating sounds.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 5: Benjie Bear notices cherries -->
+        <panel id="panel5">
+            <character name="Benjie Bear" action="covered in honey and blackberry juice, looking at another container">
+                <dialogue>WHAT’S THIS? CHERRIES?</dialogue>
+            </character>
+            <scene description="Benjie Bear is messy with honey and juice, noticing a container nearby.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 6: Benjie Bear finds strawberries instead of cherries -->
+        <panel id="panel6">
+            <character name="Benjie Bear" action="approaching container and seeing strawberries">
+                <dialogue>NO! IT'S STRAWBERRIES!</dialogue>
+            </character>
+            <scene description="Benjie Bear realizes the container has strawberries, not cherries.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 7: Benjie Bear falls from the strawberry container -->
+        <panel id="panel7">
+            <character name="Benjie Bear" action="sitting on ground after falling from the strawberry container, strawberries scattered around">
+                <dialogue>OH, WELL - GUESS I OUGHTA BE GETTING HOME! IT'S ALMOST DINNER-TIME!</dialogue>
+            </character>
+            <scene description="Benjie Bear, now on the ground with strawberries scattered around, prepares to leave.">
+            </scene>
+        </panel>
+    </page>
+    
+
+    <!-- Page 5 encoding start -->
+    <page number="5">
+        <!-- Panel 1: Benjie Bear walking home, covered in food remnants -->
+        <panel id="panel1">
+            <character name="Benjie Bear" action="walking home, covered in honey and other food remnants">
+                <dialogue>I HOPE THERE'S A LOT FOR DINNER! I'VE HAD A HARD DAY!</dialogue>
+            </character>
+            <scene description="Benjie Bear, messy from his food adventures, walks home.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 2: Benjie Bear meets another bear -->
+        <panel id="panel2">
+            <character name="Benjie Bear" action="greeting another bear he encounters on the way home">
+                <dialogue>HIYA, MOM! WHAT'S COOKIN'?</dialogue>
+            </character>
+            <scene description="Benjie Bear encounters another bear, cheerfully greeting her.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 3: The other bear chases Benjie away -->
+        <panel id="panel3">
+            <character name="Other Bear" action="chasing Benjie Bear, swatting at him">
+                <dialogue>GET OUT OF HERE, YOU DISEASED TRAMP!</dialogue>
+            </character>
+            <character name="Benjie Bear" action="running away from the other bear"/>
+            <scene description="The other bear swats at Benjie, who runs away quickly.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 4: Benjie Bear near a body of water -->
+        <panel id="panel4">
+            <character name="Benjie Bear" action="standing by a body of water, looking disappointed">
+                <dialogue>SHE DIDN'T EVEN KNOW ME! AND WHAT DOES SHE MEAN, DISEASED?</dialogue>
+            </character>
+            <scene description="Benjie Bear, covered in remnants from his food adventures, looks sadly into the water.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 5: Benjie Bear sees his reflection in the water -->
+        <panel id="panel5">
+            <action description="Benjie Bear jumps in surprise upon seeing his own reflection."/>
+            <scene description="Benjie Bear is surprised by his own messy reflection in the water.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 6: Benjie Bear looking sad -->
+        <panel id="panel6">
+            <character name="Benjie Bear" action="looking sad as he realizes his reflection">
+                <dialogue>IT'S ME! OH, DEAR. I MUST BE AWFUL SICK!</dialogue>
+            </character>
+            <scene description="Benjie Bear appears sad after realizing how messy he looks.">
+            </scene>
+        </panel>
+        
+        <!-- Panel 7: Benjie Bear nervously reflects -->
+        <panel id="panel7">
+            <character name="Benjie Bear" action="looking nervous, reflecting on his day">
+                <dialogue>IT MUST'VE BEEN SOMETHING I ATE!</dialogue>
+            </character>
+            <scene description="Benjie Bear, looking worried, contemplates what could have caused his appearance.">
+            </scene>
+        </panel>
+    </page>
+    
+
+</TEI>
