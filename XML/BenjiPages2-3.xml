@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI>
-    
+<?xml-model href="../updatedSchem.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
     <!-- Page 2 encoding start -->
     <page number="2">
         <!-- Panel 1: Benjie Bear in milk container, saying "ULP!" and "WHEWW!" -->
@@ -119,4 +119,4 @@
     </page>
     
      
-</TEI>
+</xml>

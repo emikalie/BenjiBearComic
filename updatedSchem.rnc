@@ -1,5 +1,5 @@
-# Start with the root element 'TEI'
-start = element TEI { page+ }
+# Start with the root element 'xml'
+start = element xml { page+ }
 
 # Define the 'page' element with a 'number' attribute and multiple 'panel' elements
 page = element page {
@@ -12,9 +12,10 @@ page = element page {
 # Define the 'panel' element with an 'id' attribute and optional content for 'character', 'scene', and 'action'
 panel = element panel {
     # 'id' attribute (unique ID for the panel)
-    attribute id { xsd:ID },
+    attribute order { xsd:integer }, 
+    attribute shape {"box" | "circle" | "semicircle" | "diag-right" | "diag-left" | "wavy-right" | "wavy-left" },
     # A panel may contain multiple 'character' elements, one optional 'scene', and/or one optional 'action' element
-    (character*, scene?, action?)
+    (character | scene | action)+
 }
 
 # Define the 'character' element with 'name' and 'action' attributes and optional 'dialogue' and 'sound' content
@@ -30,7 +31,9 @@ character = element character {
 }
 
 # Define the 'dialogue' element, which contains text (the spoken dialogue)
-dialogue = element dialogue { text }
+dialogue = element dialogue { 
+    attribute how {"spoken" | "thought" },
+    text }
 
 # Define the 'sound' element, which contains text representing sound effects
 sound = element sound { text }
@@ -48,11 +51,11 @@ action = element action {
 }
 
 # Comments:
-# 1. The '<TEI>' element is the root and must contain one or more '<page>' elements.
+# 1. The '<xml>' element is the root and must contain one or more '<page>' elements.
 # 2. Each '<page>' has a 'number' attribute (an integer) and one or more '<panel>' elements.
-# 3. A '<panel>' element has an 'id' (unique identifier) and may contain multiple '<character>' elements, optionally a '<scene>', and/or an '<action>'.
+# 3. A '<panel>' element has an 'order' (an integer), and a 'shape' (with controlled values), and may contain multiple '<character>' elements, optionally a '<scene>', and/or an '<action>'.
 # 4. A '<character>' element describes a character in the panel with 'name', 'action' attributes and optionally '<dialogue>' and '<sound>'.
-# 5. A '<dialogue>' element contains the actual speech or thoughts of the character.
+# 5. A '<dialogue>' element has 'how' to indicate  "spoken" (actual speech) or "thought" (thoughts of the character).
 # 6. A '<sound>' element represents any sound effects related to the character's actions.
 # 7. A '<scene>' element describes the visual or situational context of the panel with a 'description' attribute.
 # 8. An '<action>' element provides a description of an action with a 'description' attribute.

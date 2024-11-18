@@ -1,13 +1,14 @@
-<TEI> 
+<?xml-model href="../updatedSchem.rnc" type="application/relax-ng-compact-syntax"?>
+<xml> 
     <!-- Page 4 encoding start -->
     <page number="4">
         <!-- Panel 1: Benjie Bear falls from the crashing cage, no dialogue -->
-        <panel id="panel1">
+        <panel order="1">
             <action description="Benjie Bear is falling from a crashing cage."/>
         </panel>
         
         <!-- Panel 2: Benjie Bear finds honey on the ground -->
-        <panel id="panel2">
+        <panel order="2">
             <character name="Benjie Bear" action="sitting on the floor, surprised to see honey">
                 <dialogue>WOW! HONEY!</dialogue>
             </character>
@@ -16,7 +17,7 @@
         </panel>
         
         <!-- Panel 3: Benjie Bear finds blackberries -->
-        <panel id="panel3">
+        <panel order="3">
             <character name="Benjie Bear" action="honey dripping from face, noticing blackberries nearby">
                 <dialogue>AND BLACK-BERRIES!</dialogue>
             </character>
@@ -25,7 +26,7 @@
         </panel>
         
         <!-- Panel 4: Benjie Bear eating honey and blackberries -->
-        <panel id="panel4">
+        <panel order="4">
             <character name="Benjie Bear" action="sitting in blackberry container with honey container">
                 <sound>CHOMP-CHOMP! SQUISH! YUM-YUM!</sound>
             </character>
@@ -34,7 +35,7 @@
         </panel>
         
         <!-- Panel 5: Benjie Bear notices cherries -->
-        <panel id="panel5">
+        <panel order="5">
             <character name="Benjie Bear" action="covered in honey and blackberry juice, looking at another container">
                 <dialogue>WHAT’S THIS? CHERRIES?</dialogue>
             </character>
@@ -43,7 +44,7 @@
         </panel>
         
         <!-- Panel 6: Benjie Bear finds strawberries instead of cherries -->
-        <panel id="panel6">
+        <panel order="6">
             <character name="Benjie Bear" action="approaching container and seeing strawberries">
                 <dialogue>NO! IT'S STRAWBERRIES!</dialogue>
             </character>
@@ -52,7 +53,7 @@
         </panel>
         
         <!-- Panel 7: Benjie Bear falls from the strawberry container -->
-        <panel id="panel7">
+        <panel order="7">
             <character name="Benjie Bear" action="sitting on ground after falling from the strawberry container, strawberries scattered around">
                 <dialogue>OH, WELL - GUESS I OUGHTA BE GETTING HOME! IT'S ALMOST DINNER-TIME!</dialogue>
             </character>
@@ -65,7 +66,7 @@
     <!-- Page 5 encoding start -->
     <page number="5">
         <!-- Panel 1: Benjie Bear walking home, covered in food remnants -->
-        <panel id="panel1">
+        <panel shape="" order="1">
             <character name="Benjie Bear" action="walking home, covered in honey and other food remnants">
                 <dialogue>I HOPE THERE'S A LOT FOR DINNER! I'VE HAD A HARD DAY!</dialogue>
             </character>
@@ -74,7 +75,7 @@
         </panel>
         
         <!-- Panel 2: Benjie Bear meets another bear -->
-        <panel id="panel2">
+        <panel order="2">
             <character name="Benjie Bear" action="greeting another bear he encounters on the way home">
                 <dialogue>HIYA, MOM! WHAT'S COOKIN'?</dialogue>
             </character>
@@ -83,7 +84,7 @@
         </panel>
         
         <!-- Panel 3: The other bear chases Benjie away -->
-        <panel id="panel3">
+        <panel order="3">
             <character name="Other Bear" action="chasing Benjie Bear, swatting at him">
                 <dialogue>GET OUT OF HERE, YOU DISEASED TRAMP!</dialogue>
             </character>
@@ -93,7 +94,7 @@
         </panel>
         
         <!-- Panel 4: Benjie Bear near a body of water -->
-        <panel id="panel4">
+        <panel order="4">
             <character name="Benjie Bear" action="standing by a body of water, looking disappointed">
                 <dialogue>SHE DIDN'T EVEN KNOW ME! AND WHAT DOES SHE MEAN, DISEASED?</dialogue>
             </character>
@@ -102,14 +103,14 @@
         </panel>
         
         <!-- Panel 5: Benjie Bear sees his reflection in the water -->
-        <panel id="panel5">
+        <panel order="5">
             <action description="Benjie Bear jumps in surprise upon seeing his own reflection."/>
             <scene description="Benjie Bear is surprised by his own messy reflection in the water.">
             </scene>
         </panel>
         
         <!-- Panel 6: Benjie Bear looking sad -->
-        <panel id="panel6">
+        <panel order="6">
             <character name="Benjie Bear" action="looking sad as he realizes his reflection">
                 <dialogue>IT'S ME! OH, DEAR. I MUST BE AWFUL SICK!</dialogue>
             </character>
@@ -118,7 +119,7 @@
         </panel>
         
         <!-- Panel 7: Benjie Bear nervously reflects -->
-        <panel id="panel7">
+        <panel order="7">
             <character name="Benjie Bear" action="looking nervous, reflecting on his day">
                 <dialogue>IT MUST'VE BEEN SOMETHING I ATE!</dialogue>
             </character>
@@ -128,4 +129,4 @@
     </page>
     
 
-</TEI>
+</xml>

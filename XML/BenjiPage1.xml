@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI> 
+<?xml-model href="../updatedSchem.rnc" type="application/relax-ng-compact-syntax"?>
+<xml> 
     <!-- Page 1 encoding start -->
     <page number="1">
         <!-- Panel 1 encoding -->
@@ -68,4 +69,4 @@
         
     </page>
     
-</TEI>
+</xml>
