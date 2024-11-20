@@ -3,23 +3,23 @@
     <!-- Page 4 encoding start -->
     <page number="4">
         <!-- Panel 1: Benjie Bear falls from the crashing cage, no dialogue -->
-        <panel order="1">
+        <panel shape="box" order="1">
             <action description="Benjie Bear is falling from a crashing cage."/>
         </panel>
         
         <!-- Panel 2: Benjie Bear finds honey on the ground -->
-        <panel order="2">
+        <panel shape="box" order="2">
             <character name="Benjie Bear" action="sitting on the floor, surprised to see honey">
-                <dialogue>WOW! HONEY!</dialogue>
+                <dialogue how="spoken">WOW! HONEY!</dialogue>
             </character>
             <scene description="Benjie Bear, now out of the cage, spots honey on the ground.">
             </scene>
         </panel>
         
         <!-- Panel 3: Benjie Bear finds blackberries -->
-        <panel order="3">
+        <panel shape="box" order="3">
             <character name="Benjie Bear" action="honey dripping from face, noticing blackberries nearby">
-                <dialogue>AND BLACK-BERRIES!</dialogue>
+                <dialogue how="spoken">AND BLACK-BERRIES!</dialogue>
             </character>
             <scene description="Benjie Bear, with honey on his face, discovers blackberries nearby.">
             </scene>

@@ -13,7 +13,7 @@ page = element page {
 panel = element panel {
     # 'id' attribute (unique ID for the panel)
     attribute order { xsd:integer }, 
-    attribute shape {"box" | "circle" | "semicircle" | "diag-right" | "diag-left" | "wavy-right" | "wavy-left" },
+    attribute shape {"box" | "slanted-box" | "circle" | "semicircle" | "diag-right" | "diag-left" | "wavy-right" | "wavy-left" | "wavy-center"},
     # A panel may contain multiple 'character' elements, one optional 'scene', and/or one optional 'action' element
     (character | scene | action)+
 }

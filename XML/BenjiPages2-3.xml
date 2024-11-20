@@ -4,31 +4,31 @@
     <!-- Page 2 encoding start -->
     <page number="2">
         <!-- Panel 1: Benjie Bear in milk container, saying "ULP!" and "WHEWW!" -->
-        <panel id="panel1">
+        <panel shape="semicircle" order="1">
             <character name="Benjie Bear" action="hiding in milk container">
-                <dialogue>ULP!</dialogue>
-                <dialogue>WHEWW!</dialogue>
+                <dialogue how="thought">ULP! WHEWW! </dialogue>
+                <sound>th</sound>
             </character>
             <scene description="Benjie Bear hides in a milk container, looking startled.">
             </scene>
         </panel>
         
         <!-- Panel 2: Benjie Bear emerging with milk dripping, saying "HEY! THAT STUFF TASTES PRETTY GOOD!" -->
-        <panel id="panel2">
-            <character name="Benjie Bear" action="emerging from milk container, dripping milk">
-                <dialogue>HEY! THAT STUFF TASTES PRETTY GOOD!</dialogue>
+        <panel shape="slanted-box" order="2">
+            <character name="enjie Bear" action="emerging from milk container, dripping milk">
+                <dialogue how="spoken">HEY! THAT STUFF TASTES PRETTY GOOD!</dialogue>
             </character>
             <scene description="Benjie Bear comes out of the milk container with milk dripping off him.">
             </scene>
         </panel>
         
         <!-- Panel 3: Benjie Bear going back into the milk container, no dialogue -->
-        <panel id="panel3">
+        <panel shape="box" order="3">
             <action description="Benjie Bear goes back into the milk container, head first, to drink more milk."/>
         </panel>
         
         <!-- Panel 4: Benjie Bear drinking milk with sounds -->
-        <panel id="panel4">
+        <panel shape="box" order="4">
             <character name="Benjie Bear" action="drinking milk upside down in the container">
                 <sound>GLUB! SLURP! SLURP! SMACK!</sound>
             </character>
@@ -37,36 +37,36 @@
         </panel>
         
         <!-- Panel 5: Benjie Bear pulls his head out, saying "HAHHHHH!" -->
-        <panel id="panel5">
+        <panel shape="slanted-box" order="5">
             <character name="Benjie Bear" action="pulling head out of milk container">
-                <dialogue>HAHHHHH!</dialogue>
+                <dialogue how="spoken" >HAHHHHH!</dialogue>
             </character>
             <scene description="Benjie Bear looks satisfied after drinking milk.">
             </scene>
         </panel>
         
         <!-- Panel 6: Benjie Bear out of container, saying "THAT STUFF SURE MAKES YOU FEEL SLEEPY! HO-HUM!" -->
-        <panel id="panel6">
+        <panel shape="slanted-box" order="6">
             <character name="Benjie Bear" action="looking tired, milk dripping off him">
-                <dialogue>THAT STUFF SURE MAKES YOU FEEL SLEEPY! HO-HUM!</dialogue>
+                <dialogue how="spoken">THAT STUFF SURE MAKES YOU FEEL SLEEPY! HO-HUM!</dialogue>
             </character>
             <scene description="Benjie Bear appears drowsy, with milk dripping off him.">
             </scene>
         </panel>
         
         <!-- Panel 7: Benjie Bear sees a bag of flour, thinking "I THINK ID BETTER TAKE A NAP! HMM! THAT WHITE STUFF LOOKS NICE AND SOFT!" -->
-        <panel id="panel7">
+        <panel shape="box" order="7">
             <character name="Benjie Bear" action="looking at a big bag of flour">
-                <dialogue>I THINK ID BETTER TAKE A NAP! HMM! THAT WHITE STUFF LOOKS NICE AND SOFT!</dialogue>
+                <dialogue how="spoken">I THINK ID BETTER TAKE A NAP! HMM! THAT WHITE STUFF LOOKS NICE AND SOFT!</dialogue>
             </character>
             <scene description="Benjie Bear considers a nap, looking at a big, soft bag of flour.">
             </scene>
         </panel>
         
         <!-- Panel 8: Benjie Bear lays on bag of flour, saying "I'LL CURL UP HERE FOR A FEW MINUTES..." -->
-        <panel id="panel8">
+        <panel shape="box" order="8">
             <character name="Benjie Bear" action="lying on top of the flour bag, looking sleepy">
-                <dialogue>I'LL CURL UP HERE FOR A FEW MINUTES...</dialogue>
+                <dialogue how="spoken">I'LL CURL UP HERE FOR A FEW MINUTES...</dialogue>
             </character>
             <scene description="Benjie Bear curls up on the bag of flour, preparing for a nap.">
             </scene>
@@ -78,9 +78,9 @@
     <!-- Page 3 encoding start -->
     <page number="3">
         <!-- Panel 1: Benjie Bear napping with one eye open, man says "WELL I'LL BE HORNSWOGGLED! A POLAR BEAR!" -->
-        <panel id="panel1">
+        <panel shape="slanted-box" order="1">
             <character name="Man" action="noticing Benjie Bear napping">
-                <dialogue>WELL I'LL BE HORNSWOGGLED! A POLAR BEAR!</dialogue>
+                <dialogue how="spoken">WELL I'LL BE HORNSWOGGLED! A POLAR BEAR!</dialogue>
             </character>
             <character name="Benjie Bear" action="napping with one eye partially open"/>
             <scene description="Benjie Bear is resting with one eye open, and a man appears standing over him.">
@@ -88,30 +88,30 @@
         </panel>
         
         <!-- Panel 2: Benjie Bear tries to run away, getting out of the man’s hands for a moment -->
-        <panel id="panel2">
+        <panel shape="slanted-box" order="2">
             <action description="Benjie Bear tries to run away from the man, managing to get out of his hands momentarily."/>
             <scene description="Benjie Bear struggles as he tries to escape the man's grasp.">
             </scene>
         </panel>
         
         <!-- Panel 3: The man catches Benjie again, saying "NOT SO FAST SON! WE'RE GOING TO THE CITY, YOU AND ME! A BABY POLAR BEAR OUGHT TO FETCH A GOOD PRICE AT THE ZOO!" -->
-        <panel id="panel3">
+        <panel shape="box" order="3">
             <character name="Man" action="holding Benjie Bear firmly">
-                <dialogue>NOT SO FAST SON! WE'RE GOING TO THE CITY, YOU AND ME! A BABY POLAR BEAR OUGHT TO FETCH A GOOD PRICE AT THE ZOO!</dialogue>
+                <dialogue how="spoken">NOT SO FAST SON! WE'RE GOING TO THE CITY, YOU AND ME! A BABY POLAR BEAR OUGHT TO FETCH A GOOD PRICE AT THE ZOO!</dialogue>
             </character>
             <scene description="The man catches Benjie Bear again, wrapping him in his hands.">
             </scene>
         </panel>
         
         <!-- Panel 4: The man places Benjie in a crate, Benjie looks nervous -->
-        <panel id="panel4">
+        <panel shape="slanted-box" order="4">
             <character name="Benjie Bear" action="looking nervous inside a crate"/>
             <scene description="Benjie Bear is placed in a crate by the man and looks nervous.">
             </scene>
         </panel>
         
         <!-- Panel 5: Benjie Bear is in the crate on the back of a truck, looking very worried -->
-        <panel id="panel5">
+        <panel shape="slanted-box" order="5">
             <character name="Benjie Bear" action="inside a crate on the truck, looking worried and scared"/>
             <scene description="Benjie Bear, now in the crate on the back of a truck, appears worried and scared.">
             </scene>
