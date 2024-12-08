@@ -6,7 +6,7 @@
     <xsl:template match="/xml">
         <html>
             <head>
-                <title>Benji Comic Analysis</title>
+                <title>Benji Comic</title>
                 <style>
                     body { font-family: Arial, sans-serif; margin: 20px; }
                     h1 { color: #4CAF50; }
