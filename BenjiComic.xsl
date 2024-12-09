@@ -2,11 +2,13 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes" />
 
+
     <!-- Template match for root element -->
     <xsl:template match="/xml">
         <html>
             <head>
                 <title>Benji Comic</title>
+                <link rel="stylesheet" href="basepage.css"/>
                 <style>
                     body { font-family: Arial, sans-serif; margin: 20px; }
                     h1 { color: #4CAF50; }
@@ -17,6 +19,34 @@
                 </style>
             </head>
             <body>
+                <!--Nav Bar-->
+                <nav> 
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="comic.html">Comic Info</a></li>
+                        <li><a href="Comic_pages.html">Comic Read View</a></li>
+                    </ul>
+                </nav>
+                <!--Comic Info-->
+                <div class="container">
+                    <section id="project">
+                        <header>
+                            <h2>Our Selected Comic</h2>
+                            <p>Discover the story and context of our selected comic book. Using CBML, we aim to preserve and analyze its narrative structure, artwork, and historical significance.</p>
+                        </header>
+                        
+                        <article>
+                            <h3>Comic Book Details</h3>
+                            <ul>
+                                <li><strong>Title:</strong> <em>Giggle Comics: Benjie Bear</em></li>
+                                <li><strong>Publication Date:</strong> October 1943</li>
+                                <li><strong>Publisher:</strong> Creston Publications Corp.</li>
+                                <li><strong>Description:</strong> Giggle Comics was an American anthology comic that came out in October of 1943 towards the end of WWII. The comic features a variety                              of strip comics featuring animals in all sorts of perculiar situations. For this specific project we focused on the very first issue of the comic, and the first                               strip comic, Benjie Bear. Benjie Bear is about a bear cub that ventures into a far for fresh eggs. Throughout his 8 page aventure he gets to taste a variaty of                                treats.</li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                        
                 <h1>Comic Book Analysis</h1>
                 
                 <!-- List of Characters -->
