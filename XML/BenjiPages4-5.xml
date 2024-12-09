@@ -26,7 +26,7 @@
         </panel>
         
         <!-- Panel 4: Benjie Bear eating honey and blackberries -->
-        <panel order="4">
+        <panel shape="circle" order="4">
             <character name="Benjie Bear" action="sitting in blackberry container with honey container">
                 <sound>CHOMP-CHOMP! SQUISH! YUM-YUM!</sound>
             </character>
@@ -35,27 +35,27 @@
         </panel>
         
         <!-- Panel 5: Benjie Bear notices cherries -->
-        <panel order="5">
+        <panel shape="box" order="5">
             <character name="Benjie Bear" action="covered in honey and blackberry juice, looking at another container">
-                <dialogue>WHAT’S THIS? CHERRIES?</dialogue>
+                <dialogue how="spoken">WHAT’S THIS? CHERRIES?</dialogue>
             </character>
             <scene description="Benjie Bear is messy with honey and juice, noticing a container nearby.">
             </scene>
         </panel>
         
         <!-- Panel 6: Benjie Bear finds strawberries instead of cherries -->
-        <panel order="6">
+        <panel shape="slanted-box" order="6">
             <character name="Benjie Bear" action="approaching container and seeing strawberries">
-                <dialogue>NO! IT'S STRAWBERRIES!</dialogue>
+                <dialogue how="spoken">NO! IT'S STRAWBERRIES!</dialogue>
             </character>
             <scene description="Benjie Bear realizes the container has strawberries, not cherries.">
             </scene>
         </panel>
         
         <!-- Panel 7: Benjie Bear falls from the strawberry container -->
-        <panel order="7">
+        <panel shape="box" order="7">
             <character name="Benjie Bear" action="sitting on ground after falling from the strawberry container, strawberries scattered around">
-                <dialogue>OH, WELL - GUESS I OUGHTA BE GETTING HOME! IT'S ALMOST DINNER-TIME!</dialogue>
+                <dialogue how="spoken">OH, WELL - GUESS I OUGHTA BE GETTING HOME! IT'S ALMOST DINNER-TIME!</dialogue>
             </character>
             <scene description="Benjie Bear, now on the ground with strawberries scattered around, prepares to leave.">
             </scene>
@@ -66,27 +66,27 @@
     <!-- Page 5 encoding start -->
     <page number="5">
         <!-- Panel 1: Benjie Bear walking home, covered in food remnants -->
-        <panel shape="" order="1">
+        <panel shape="box" order="1">
             <character name="Benjie Bear" action="walking home, covered in honey and other food remnants">
-                <dialogue>I HOPE THERE'S A LOT FOR DINNER! I'VE HAD A HARD DAY!</dialogue>
+                <dialogue how="spoken">I HOPE THERE'S A LOT FOR DINNER! I'VE HAD A HARD DAY!</dialogue>
             </character>
             <scene description="Benjie Bear, messy from his food adventures, walks home.">
             </scene>
         </panel>
         
         <!-- Panel 2: Benjie Bear meets another bear -->
-        <panel order="2">
+        <panel shape="box" order="2">
             <character name="Benjie Bear" action="greeting another bear he encounters on the way home">
-                <dialogue>HIYA, MOM! WHAT'S COOKIN'?</dialogue>
+                <dialogue how="spoken">HIYA, MOM! WHAT'S COOKIN'?</dialogue>
             </character>
             <scene description="Benjie Bear encounters another bear, cheerfully greeting her.">
             </scene>
         </panel>
         
         <!-- Panel 3: The other bear chases Benjie away -->
-        <panel order="3">
+        <panel shape="box" order="3">
             <character name="Other Bear" action="chasing Benjie Bear, swatting at him">
-                <dialogue>GET OUT OF HERE, YOU DISEASED TRAMP!</dialogue>
+                <dialogue how="spoken">GET OUT OF HERE, YOU DISEASED TRAMP!</dialogue>
             </character>
             <character name="Benjie Bear" action="running away from the other bear"/>
             <scene description="The other bear swats at Benjie, who runs away quickly.">
@@ -94,34 +94,34 @@
         </panel>
         
         <!-- Panel 4: Benjie Bear near a body of water -->
-        <panel order="4">
+        <panel shape="box" order="4">
             <character name="Benjie Bear" action="standing by a body of water, looking disappointed">
-                <dialogue>SHE DIDN'T EVEN KNOW ME! AND WHAT DOES SHE MEAN, DISEASED?</dialogue>
+                <dialogue how="spoken">SHE DIDN'T EVEN KNOW ME! AND WHAT DOES SHE MEAN, DISEASED?</dialogue>
             </character>
             <scene description="Benjie Bear, covered in remnants from his food adventures, looks sadly into the water.">
             </scene>
         </panel>
         
         <!-- Panel 5: Benjie Bear sees his reflection in the water -->
-        <panel order="5">
+        <panel shape="box" order="5">
             <action description="Benjie Bear jumps in surprise upon seeing his own reflection."/>
             <scene description="Benjie Bear is surprised by his own messy reflection in the water.">
             </scene>
         </panel>
         
         <!-- Panel 6: Benjie Bear looking sad -->
-        <panel order="6">
+        <panel shape="box" order="6">
             <character name="Benjie Bear" action="looking sad as he realizes his reflection">
-                <dialogue>IT'S ME! OH, DEAR. I MUST BE AWFUL SICK!</dialogue>
+                <dialogue how="spoken">IT'S ME! OH, DEAR. I MUST BE AWFUL SICK!</dialogue>
             </character>
             <scene description="Benjie Bear appears sad after realizing how messy he looks.">
             </scene>
         </panel>
         
         <!-- Panel 7: Benjie Bear nervously reflects -->
-        <panel order="7">
+        <panel shape="box" order="7">
             <character name="Benjie Bear" action="looking nervous, reflecting on his day">
-                <dialogue>IT MUST'VE BEEN SOMETHING I ATE!</dialogue>
+                <dialogue how="spoken">IT MUST'VE BEEN SOMETHING I ATE!</dialogue>
             </character>
             <scene description="Benjie Bear, looking worried, contemplates what could have caused his appearance.">
             </scene>
