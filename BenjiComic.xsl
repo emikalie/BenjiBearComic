@@ -9,14 +9,14 @@
             <head>
                 <title>Benji Comic</title>
                 <link rel="stylesheet" href="basepage.css"/>
-                <style>
+                <!--<style>
                     body { font-family: Arial, sans-serif; margin: 20px; }
                     h1 { color: #4CAF50; }
                     table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
                     th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
                     th { background-color: #f2f2f2; }
                     ul { list-style-type: disc; margin-left: 20px; }
-                </style>
+                </style>-->
             </head>
             <body>
                 <!--Nav Bar-->
