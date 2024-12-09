@@ -44,6 +44,13 @@
                                 <li><strong>Description:</strong> Giggle Comics was an American anthology comic that came out in October of 1943 towards the end of WWII. The comic features a variety                              of strip comics featuring animals in all sorts of perculiar situations. For this specific project we focused on the very first issue of the comic, and the first                               strip comic, Benjie Bear. Benjie Bear is about a bear cub that ventures into a far for fresh eggs. Throughout his 8 page aventure he gets to taste a variaty of                                treats.</li>
                             </ul>
                         </article>
+                        <footer>
+                            <p>Visit our personal websites:</p>
+                            <ul>
+                                <li><a href="https://gabvoz13.github.io/Digit100/">Gabriella's Website</a></li>
+                                <li><a href="https://sites.psu.edu/digit100homesite/">Emily Kalie's Website</a></li>
+                            </ul>
+                        </footer>
                     </section>
                 </div>
                         
