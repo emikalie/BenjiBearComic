@@ -4,8 +4,6 @@
 
     <xsl:key name="charactersByName" match="character" use="@name" />
     
-
-
     <!-- Template match for root element -->
     <xsl:template match="/xml">
         <html>
