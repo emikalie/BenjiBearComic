@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
     <xsl:key name="charactersByName" match="character" use="@name" />
+    <xsl:variable name="charNames" select="//character/@name ! normalize-space() => distinct-values()"/>
     
     <!-- Template match for root element -->
     <xsl:template match="/xml">
@@ -80,30 +81,20 @@
                 </div>
 
                 <h1>Comic Book Analysis</h1>
-<<<<<<< HEAD
+
 
                 <!-- List of Characters -->
                 <h2>List of Characters</h2>
-                <ul>
-                    <xsl:for-each select="//character">
-                        <xsl:if test="not(preceding::character[@name = current()/@name])">
-                            <li>
-                                <xsl:value-of select="@name"/>
-                            </li>
-                        </xsl:if>
-=======
-                
              
-              
+                        
                 <!-- List of Characters -->
                 <h2>List of Characters</h2>
                 <ul>
                     <!-- Deduplicate characters using the key -->
-                    <xsl:for-each select="//character[generate-id() = generate-id(key('charactersByName', normalize-space(@name))[1])]">
+                    <xsl:for-each select="//character">
                         <li>
                             <xsl:value-of select="normalize-space(@name)" />
                         </li>
->>>>>>> c3b77674db4ad0b7246ecd76dfd664a42afc023b
                     </xsl:for-each>
                 </ul>
                 
@@ -116,35 +107,22 @@
                         <th>Character</th>
                         <th>Dialogue Count</th>
                     </tr>
-<<<<<<< HEAD
-                    <xsl:for-each select="//character[dialogue]">
-                        <xsl:if test="not(preceding::character[@name = current()/@name])">
-                            <tr>
-                                <td>
-                                    <xsl:value-of select="@name"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of
-                                        select="count(//character[@name = current()/@name]/dialogue)"
-                                    />
-                                </td>
-                            </tr>
-                        </xsl:if>
-=======
-                    <xsl:for-each select="//character[generate-id() = generate-id(key('charactersByName', normalize-space(@name))[1])]">
+                   
+<xsl:variable name="document" select="current()" as="element()"/>
+                    <xsl:for-each select="$charNames">
+                        <!--<xsl:sort select="count(//panel[character/name = current()]/dialogue)"/>-->
                         <tr>
                             <td>
-                                <xsl:value-of select="normalize-space(@name)" />
+                                <xsl:value-of select="current()" />
                             </td>
                             <td>
-                                <xsl:value-of select="count(//character[normalize-space(@name) = normalize-space(current()/@name)]/dialogue)" />
+                                <xsl:value-of select="count($document//panel[character/@name ! normalize-space() = current()]//dialogue)" />
                             </td>
                         </tr>
->>>>>>> c3b77674db4ad0b7246ecd76dfd664a42afc023b
                     </xsl:for-each>
                 </table>
                 
-                
+                 
 
                 <!-- Table of Panel Shapes -->
                 <h2>Panel Shapes and Counts</h2>

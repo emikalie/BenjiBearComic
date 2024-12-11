@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="github/ComicBookProjectRepo/updatedSchem.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../updatedSchem.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <!-- Page 1 encoding start -->
     <page number="1">
@@ -85,7 +85,7 @@
 
         <!-- Panel 2: Benjie Bear emerging with milk dripping, saying "HEY! THAT STUFF TASTES PRETTY GOOD!" -->
         <panel shape="slanted-box" order="2">
-            <character name="enjie Bear" action="emerging from milk container, dripping milk">
+            <character name="Benjie Bear" action="emerging from milk container, dripping milk">
                 <dialogue how="spoken">HEY! THAT STUFF TASTES PRETTY GOOD!</dialogue>
             </character>
             <scene
