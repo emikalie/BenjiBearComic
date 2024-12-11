@@ -7,6 +7,7 @@
     
     <!-- Template match for root element -->
     <xsl:template match="/xml">
+        <xsl:variable name="document" select="current()" as="element()"/>
         <html>
             <head>
                 <title>Benji Comic</title>
@@ -83,17 +84,14 @@
                 <h1>Comic Book Analysis</h1>
 
 
-                <!-- List of Characters -->
-                <h2>List of Characters</h2>
-             
                         
                 <!-- List of Characters -->
                 <h2>List of Characters</h2>
                 <ul>
                     <!-- Deduplicate characters using the key -->
-                    <xsl:for-each select="//character">
+                    <xsl:for-each select="$charNames">
                         <li>
-                            <xsl:value-of select="normalize-space(@name)" />
+                            <xsl:value-of select="current()" />
                         </li>
                     </xsl:for-each>
                 </ul>
@@ -108,9 +106,9 @@
                         <th>Dialogue Count</th>
                     </tr>
                    
-<xsl:variable name="document" select="current()" as="element()"/>
+
                     <xsl:for-each select="$charNames">
-                        <!--<xsl:sort select="count(//panel[character/name = current()]/dialogue)"/>-->
+                        <xsl:sort select="count($document//panel[character/name = current()]/dialogue)"/>
                         <tr>
                             <td>
                                 <xsl:value-of select="current()" />
