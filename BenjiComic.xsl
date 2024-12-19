@@ -2,9 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
-    <xsl:key name="charactersByName" match="character" use="@name" />
-    <xsl:variable name="charNames" select="//character/@name ! normalize-space() => distinct-values()"/>
-    
+    <xsl:key name="charactersByName" match="character" use="@name"/>
+    <xsl:variable name="charNames"
+        select="//character/@name ! normalize-space() => distinct-values()"/>
+
     <!-- Template match for root element -->
     <xsl:template match="/xml">
         <xsl:variable name="document" select="current()" as="element()"/>
@@ -84,19 +85,19 @@
                 <h1>Comic Book Analysis</h1>
 
 
-                        
+
                 <!-- List of Characters -->
                 <h2>List of Characters</h2>
                 <ul>
                     <!-- Deduplicate characters using the key -->
                     <xsl:for-each select="$charNames">
                         <li>
-                            <xsl:value-of select="current()" />
+                            <xsl:value-of select="current()"/>
                         </li>
                     </xsl:for-each>
                 </ul>
-                
-                
+
+
 
                 <!-- Table of Dialogue Frequency -->
                 <h2>Dialogue Frequency by Character</h2>
@@ -105,22 +106,25 @@
                         <th>Character</th>
                         <th>Dialogue Count</th>
                     </tr>
-                   
+
 
                     <xsl:for-each select="$charNames">
-                        <xsl:sort select="count($document//panel[character/name = current()]/dialogue)"/>
+                        <xsl:sort
+                            select="count($document//panel[character/name = current()]/dialogue)"/>
                         <tr>
                             <td>
-                                <xsl:value-of select="current()" />
+                                <xsl:value-of select="current()"/>
                             </td>
                             <td>
-                                <xsl:value-of select="count($document//panel[character/@name ! normalize-space() = current()]//dialogue)" />
+                                <xsl:value-of
+                                    select="count($document//panel[character/@name ! normalize-space() = current()]//dialogue)"
+                                />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
-                
-                 
+
+
 
                 <!-- Table of Panel Shapes -->
                 <h2>Panel Shapes and Counts</h2>
@@ -161,7 +165,7 @@
                                 </xsl:attribute>
                             </img>
                         </div>
-                        
+
                         <!-- Comic Info Section -->
                         <div class="comic-info">
                             <h3>Page <xsl:value-of select="@number"/></h3>
@@ -172,8 +176,12 @@
                                 </tr>
                                 <xsl:for-each select="panel">
                                     <tr>
-                                        <td><xsl:value-of select="@order"/></td>
-                                        <td><xsl:value-of select="scene/@description"/></td>
+                                        <td>
+                                            <xsl:value-of select="@order"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="scene/@description"/>
+                                        </td>
                                     </tr>
                                 </xsl:for-each>
                             </table>
